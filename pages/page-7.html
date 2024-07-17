@@ -142,15 +142,15 @@
                     const citationText = document.getElementById('citationText');
                     const currentDate = new Date().toISOString().split('T')[0];
             
-                    const citation1 = "Pollin, C. (2024). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html";
+                    const citation = "Pollin, C. (2024). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html";
             
-                    citationText1.textContent1 = citation1;
+                    citationText.textContent = citation1;
                     citationPopup.style.display = 'block';
                 }
 
                 function copyCitation() {
-                    const citationText = document.getElementById('citationText1').textContent1;
-                    navigator.clipboard.writeText(citationText1).then(() => {
+                    const citationText = document.getElementById('citationText').textContent;
+                    navigator.clipboard.writeText(citationText).then(() => {
                         alert('Citation copied to clipboard!');
                     });
                 }
@@ -162,7 +162,7 @@
            
             <div id="citationPopup">
               <h2>Citation</h2>
-              <p id="citationText1"></p>
+              <p id="citationText"></p>
               <button onclick="copyCitation()">Copy Citation</button>
               <button onclick="closeCitation()">Close</button>
             </div>
