@@ -109,7 +109,7 @@
     <script>
         const citations = {
             citation1: "Pollin, C. (2024). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html",
-            citation2: "Doe, J. (2024). Advanced Topics in AI. TechPublishers. https://techpublishers.com/ai/advanced-topics.html"
+            citation2: "Lang, C. (2024). Retrieval Augmented Generation (RAG) – Externe Wissensbasen für Large Language Models am Beispiel deutscher Grammatik. AGKI-AG. https://agki-dh.github.io/pages/page-5.html"
         };
 
         function showCitation(citationId) {
@@ -199,13 +199,13 @@
               <p class="card-text">Vortragsfolien: Retrieval Augmented Generation (Christian Lang)</p>
               <div class="d-flex justify-content-between align-items-center">
                
-            <button onclick="showCitation()" class="btn btn-sm btn-outline-secondary">Cite</button>
-
+           <button onclick="showCitation('citation2')" class="btn btn-sm btn-outline-secondary">Cite</button>
+    
+            <!-- Citation popup -->
             <div id="citationPopup">
-              <h2>Citation</h2>
-              <p id="citationText"></p>
-              <button onclick="copyCitation()">Copy Citation</button>
-              <button onclick="closeCitation()">Close</button>
+                <p id="citationText"></p>
+                <button onclick="copyCitation()">Copy</button>
+                <button onclick="closeCitation()">Close</button>
     
             </div>
           </div>
