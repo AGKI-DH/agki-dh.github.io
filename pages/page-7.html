@@ -116,7 +116,36 @@
       <h2>Prompt Engeneering</h2          
     </section>
 
-  
+    <script>
+        const citations = {
+            citation1: "Pollin, C. (2024). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html",
+            citation2: "Doe, J. (2024). Advanced Topics in AI. TechPublishers. https://techpublishers.com/ai/advanced-topics.html"
+        };
+
+        function showCitation(citationId) {
+            const citationPopup = document.getElementById('citationPopup');
+            const citationText = document.getElementById('citationText');
+            const citation = citations[citationId];
+            
+            if (citation) {
+                citationText.textContent = citation;
+                citationPopup.style.display = 'block';
+            } else {
+                alert('Citation not found!');
+            }
+        }
+
+        function copyCitation() {
+            const citationText = document.getElementById('citationText').textContent;
+            navigator.clipboard.writeText(citationText).then(() => {
+                alert('Citation copied to clipboard!');
+            });
+        }
+
+        function closeCitation() {
+            document.getElementById('citationPopup').style.display = 'none';
+        }
+  </script>  
 
   <div class="album py-5 bg-body-tertiary">
     
@@ -133,38 +162,14 @@
             <div class="card-body">
               <p class="card-text">Vortragsfolien: Retrieval Augmented Generation (Christian Lang)</p>
               <div class="d-flex justify-content-between align-items-center">
-  
-             
-            <button onclick="showCitation()" class="btn btn-sm btn-outline-secondary">Cite</button>
-            <script>
-                function showCitation() {
-                    const citationPopup = document.getElementById('citationPopup');
-                    const citationText = document.getElementById('citationText');
-                    const currentDate = new Date().toISOString().split('T')[0];
-            
-                    const citation1 = "Pollin, C. (2024). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html";
-            
-                    citationText.textContent = citation1;
-                    citationPopup.style.display = 'block';
-                }
 
-                function copyCitation() {
-                    const citationText = document.getElementById('citationText').textContent;
-                    navigator.clipboard.writeText(citationText).then(() => {
-                        alert('Citation copied to clipboard!');
-                    });
-                }
-
-                function closeCitation() {
-                    document.getElementById('citationPopup').style.display = 'none';
-                }
-            </script>
-           
+            <button onclick="showCitation('citation1')" class="btn btn-sm btn-outline-secondary">Cite</button>
+    
+            <!-- Citation popup -->
             <div id="citationPopup">
-              <h2>Citation</h2>
-              <p id="citationText"></p>
-              <button onclick="copyCitation()">Copy Citation</button>
-              <button onclick="closeCitation()">Close</button>
+                <p id="citationText"></p>
+                <button onclick="copyCitation()">Copy</button>
+                <button onclick="closeCitation()">Close</button>
             </div>
           </div>
         </div>
