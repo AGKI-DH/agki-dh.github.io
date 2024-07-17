@@ -13,8 +13,6 @@
      .smaller-heading {
         font-size: 1.65rem; /* Significantly reduced from previous 2rem */
     }
-    </style>
-    <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 0.5;
@@ -31,6 +29,29 @@
             padding: 20px;
             border: 0.5px solid #ccc;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .slide-container {
+            width: 100%;
+            max-width: 800px; /* Adjust based on your needs */
+            aspect-ratio: 16 / 9; /* Standard presentation aspect ratio */
+            position: relative;
+            overflow: hidden;
+        }
+        .slide-preview {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            pointer-events: none; /* Makes the iframe non-interactive */
+        }
+        .slide-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
         }
     </style>
     <title>DHd-AG Angewandte Generative KI in den Digitalen Geisteswissenschaften (AGKI-DH)</title>
@@ -119,7 +140,7 @@
         
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <a href="https://docs.google.com/presentation/d/e/2PACX-1vTMh1ZCPoyyq7TR5tI1jScCflL1RNKpojOeKp-Rbve6mbj__KTjmj1U4zgD38h2X-yg0p1due7npmbN/pub?start=false&loop=false&delayms=3000" target="_blank">
+            <a href="https://docs.google.com/presentation/d/e/2PACX-1vTMh1ZCPoyyq7TR5tI1jScCflL1RNKpojOeKp-Rbve6mbj__KTjmj1U4zgD38h2X-yg0p1due7npmbN/embed?start=false&loop=false&delayms=3000" target="_blank">
               <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTMh1ZCPoyyq7TR5tI1jScCflL1RNKpojOeKp-Rbve6mbj__KTjmj1U4zgD38h2X-yg0p1due7npmbN/embed?start=false&loop=false&delayms=3000" frameborder="0" class="slide-preview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             </a>            
             <div class="card-body">
