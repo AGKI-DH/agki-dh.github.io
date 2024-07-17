@@ -108,29 +108,7 @@
       <h2>Prompt Engeneering</h2          
     </section>
 
-  <script>
-        function showCitation() {
-            const citationPopup = document.getElementById('citationPopup');
-            const citationText = document.getElementById('citationText');
-            const currentDate = new Date().toISOString().split('T')[0];
-            
-            const citation = `Author, A. (${new Date().getFullYear()}). Article Title. Website Name. Retrieved ${currentDate}, from https://example.com/article`;
-            
-            citationText.textContent = citation;
-            citationPopup.style.display = 'block';
-        }
-
-        function copyCitation() {
-            const citationText = document.getElementById('citationText').textContent;
-            navigator.clipboard.writeText(citationText).then(() => {
-                alert('Citation copied to clipboard!');
-            });
-        }
-
-        function closeCitation() {
-            document.getElementById('citationPopup').style.display = 'none';
-        }
-    </script>
+ 
 
   <div class="album py-5 bg-body-tertiary">
     
@@ -149,7 +127,29 @@
               <div class="d-flex justify-content-between align-items-center">
              
             <button onclick="showCitation()">Cite</button>
+            <script>
+                function showCitation() {
+                    const citationPopup = document.getElementById('citationPopup');
+                    const citationText = document.getElementById('citationText');
+                    const currentDate = new Date().toISOString().split('T')[0];
+            
+                    const citation = "Pollin, C. (2024). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html";
+            
+                    citationText.textContent = citation;
+                    citationPopup.style.display = 'block';
+                }
 
+                function copyCitation() {
+                    const citationText = document.getElementById('citationText').textContent;
+                    navigator.clipboard.writeText(citationText).then(() => {
+                        alert('Citation copied to clipboard!');
+                    });
+                }
+
+                function closeCitation() {
+                    document.getElementById('citationPopup').style.display = 'none';
+                }
+            </script>
             <div id="citationPopup">
               <h2>Citation</h2>
               <p id="citationText"></p>
