@@ -123,7 +123,7 @@
               <img src="/img/AGKI-DH-Einführung-Prompt-Engineering.png" class="card-img-top" alt="04-RAG-Lang.png">
             </a>            
             <div class="card-body">
-              <p class="card-text">Vortragsfolien von Christopher Pollin</p>
+              <p class="card-text">Vortragsfolien: Einführung in das Prompt Engineering (Christopher Pollin)</p>
               <div class="d-flex justify-content-between align-items-center">
   
              
@@ -193,8 +193,40 @@
               <img src="/img/04-RAG-Lang.png" class="card-img-top" alt="04-RAG-Lang.png">
             </a>            
             <div class="card-body">
-              <p class="card-text">Vortragsfolien von Christian Lang zu Retrieval Augmented Generation</p>
+              <p class="card-text">Vortragsfolien: Retrieval Augmented Generation (Christian Lang)</p>
               <div class="d-flex justify-content-between align-items-center">
+               
+            <button onclick="showCitation()" class="btn btn-sm btn-outline-secondary">Cite</button>
+
+            <script>
+                function showCitation() {
+                    const citationPopup = document.getElementById('citationPopup');
+                    const citationText = document.getElementById('citationText');
+                    const currentDate = new Date().toISOString().split('T')[0];
+            
+                    const citation = "Schiller-Stoff, S. (2024). IDE-Integration of Github Copilot. Jetbrains IDEs. AGKI-AG. https://agki-dh.github.io/pages/page-4.html";
+            
+                    citationText.textContent = citation;
+                    citationPopup.style.display = 'block';
+                }
+
+                function copyCitation() {
+                    const citationText = document.getElementById('citationText').textContent;
+                    navigator.clipboard.writeText(citationText).then(() => {
+                        alert('Citation copied to clipboard!');
+                    });
+                }
+
+                function closeCitation() {
+                    document.getElementById('citationPopup').style.display = 'none';
+                }
+            </script>
+            <div id="citationPopup">
+              <h2>Citation</h2>
+              <p id="citationText"></p>
+              <button onclick="copyCitation()">Copy Citation</button>
+              <button onclick="closeCitation()">Close</button>
+    
             </div>
           </div>
         </div>
