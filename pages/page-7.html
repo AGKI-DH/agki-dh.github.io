@@ -106,7 +106,7 @@
 
   <div class="container py-5">      
     <section class="mt-4">
-      <h2>Grundlagen</h2>          
+      <h2>Einführungen</h2>          
     </section>
 
     <div class="album py-5 bg-body-tertiary">
@@ -121,12 +121,11 @@
                 <p class="card-text">Vortragsfolien: LLM, Token und Embedding": Grundbegriffe Generative KI, AGKI-DH Workshop von Christopher Pollin</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <button onclick="showCitation('citation0')" class="btn btn-sm btn-outline-secondary">Cite</button>
-    
                   <!-- Citation popup -->
                   <div id="citationPopup">
-                      <p id="citationText"></p>
-                      <button onclick="copyCitation()">Copy</button>
-                      <button onclick="closeCitation()">Close</button>
+                    <p id="citationText"></p>
+                    <button onclick="copyCitation()">Copy</button>
+                    <button onclick="closeCitation()">Close</button>
                   </div>
                 </div>
               </div>
@@ -151,20 +150,13 @@
               <div class="card-body">
                 <p class="card-text">Vortragsfolien: Einführung in das Prompt Engineering, AGKI-DH Workshop von Christopher Pollin</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <button onclick="showCitation('citation0')" class="btn btn-sm btn-outline-secondary">Cite</button>
-    
+                  <button onclick="showCitation('citation1')" class="btn btn-sm btn-outline-secondary">Cite</button>
                   <!-- Citation popup -->
                   <div id="citationPopup">
-                      <p id="citationText"></p>
-                      <button onclick="copyCitation()">Copy</button>
-                      <button onclick="closeCitation()">Close</button>
+                    <p id="citationText"></p>
+                    <button onclick="copyCitation()">Copy</button>
+                    <button onclick="closeCitation()">Close</button>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
                 </div>
               </div>
             </div>
@@ -179,6 +171,12 @@
                 <p class="card-text">Videovortrag: Einführung in das Prompt Engineering, Workshop Zentrum für Informationsmodellierung Graz, von Christopher Pollin</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <button onclick="showCitation('citation2')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                  <!-- Citation popup -->
+                  <div id="citationPopup">
+                    <p id="citationText"></p>
+                    <button onclick="copyCitation()">Copy</button>
+                    <button onclick="closeCitation()">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,6 +191,12 @@
                 <p class="card-text">Vortragsfolien: #SKILLS: GPT und Prompt Engineering - Den Projektalltag erleichtern, Vortrag im IDea_Lab, Graz von Christopher Pollin</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <button onclick="showCitation('citation3')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                  <!-- Citation popup -->
+                  <div id="citationPopup">
+                    <p id="citationText"></p>
+                    <button onclick="copyCitation()">Copy</button>
+                    <button onclick="closeCitation()">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -227,6 +231,12 @@
                 <p class="card-text">Vortragsfolien: Retrieval Augmented Generation (Christian Lang)</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <button onclick="showCitation('citation4')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                  <!-- Citation popup -->
+                  <div id="citationPopup">
+                    <p id="citationText"></p>
+                    <button onclick="copyCitation()">Copy</button>
+                    <button onclick="closeCitation()">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -270,10 +280,3 @@
     document.getElementById('citationPopup').style.display = 'none';
   }
 </script>
-
-<!-- Citation popup -->
-<div id="citationPopup" style="display: none;">
-  <p id="citationText"></p>
-  <button onclick="copyCitation()">Copy</button>
-  <button onclick="closeCitation()">Close</button>
-</div>
