@@ -99,187 +99,161 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Ressourcen</h1>
-        <p class="lead text-body-secondary">Ressourcen, die aus den Veranstaltungen der AG hervorgehen sowie Ressourcen, die mit der AG geteilt werden.
+        <p class="lead text-body-secondary">Ressourcen, die aus den Veranstaltungen der AG hervorgehen sowie Ressourcen, die mit der AG geteilt werden.</p>
       </div>
     </div>
   </section>
+
   <div class="container py-5">      
     <section class="mt-4">
-      <h2>Einführungen</h2          
+      <h2>Einführungen</h2>          
     </section>
 
-    <script>
-        const citations = {
-            citation0: "Pollin, C. (2024). “LLM, Token und Embedding”: Grundbegriffe Generative. AGKI-AG. https://agki-dh.github.io/pages/page-3.html",
-            citation1: "Pollin, C. (2024). Einführung in das Prompt Engineering. https://www.youtube.com/watch?v=2Ihip3VEVlw&list=PLaHADNRco7n3LtUHqCwyqzAi2f8WB57Eg&index=4",
-            citation2: "Pollin, C. (2023). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html",
-            citation3: "Pollin, C. (2024). #SKILLS: GPT und Prompt Engineering - Den Projektalltag erleichtern. Vortrag im IDEA-Lab Graz. https://docs.google.com/presentation/d/1QZU5M7NcM_HhRXdYDgM-AuS5pljbAAuIVuijmGUIXMQ/edit#slide=id.p",
-            citation4: "Lang, C. (2024). Retrieval Augmented Generation (RAG) – Externe Wissensbasen für Large Language Models am Beispiel deutscher Grammatik. AGKI-AG. https://agki-dh.github.io/pages/page-5.html"
-        };
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <a href="https://docs.google.com/presentation/d/e/2PACX-1vTTp050Nfw2c-NFSQrl-gyJE3rXew7JwNq19Oc_s4xBha-P34Cs1OJaAvJDurUXyMBnLXA7rNAn0Tah/embed?start=false&loop=false&delayms=3000">
+                <img src="/img/AGKI-DH-Einführung-Prompt-Engineering.png" class="card-img-top" alt="AGKI-DH-Einführung-Prompt-Engineering.png">
+              </a>  
+              <div class="card-body">
+                <p class="card-text">Vortragsfolien: LLM, Token und Embedding": Grundbegriffe Generative KI, AGKI-DH Workshop von Christopher Pollin</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button onclick="showCitation('citation0')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        function showCitation(citationId) {
-            const citationPopup = document.getElementById('citationPopup');
-            const citationText = document.getElementById('citationText');
-            const citation = citations[citationId];
-            
-            if (citation) {
-                citationText.textContent = citation;
-                citationPopup.style.display = 'block';
-            } else {
-                alert('Citation not found!');
-            }
-        }
-
-        function copyCitation() {
-            const citationText = document.getElementById('citationText').textContent;
-            navigator.clipboard.writeText(citationText).then(() => {
-                alert('Citation copied to clipboard!');
-            });
-        }
-
-        function closeCitation() {
-            document.getElementById('citationPopup').style.display = 'none';
-        }
-  </script>  
-
-
-<div class="album py-5 bg-body-tertiary">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
+    <section class="mt-4">
+      <h2>Prompt Engineering</h2>          
+    </section>  
       
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <a href="https://docs.google.com/presentation/d/e/2PACX-1vTTp050Nfw2c-NFSQrl-gyJE3rXew7JwNq19Oc_s4xBha-P34Cs1OJaAvJDurUXyMBnLXA7rNAn0Tah/embed?start=false&loop=false&delayms=3000">
-            <img src="/img/AGKI-DH-Einführung-Prompt-Engineering.png" class="card-img-top" alt="AGKI-DH-Einführung-Prompt-Engineering.png">
-          </a>  
-          <div class="card-body">
-            <p class="card-text">Vortragsfolien: LLM, Token und Embedding”: Grundbegriffe Generative KI, AGKI-DH Workshop von Christopher Pollin</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button onclick="showCitation('citation0')" class="btn btn-sm btn-outline-secondary">Cite</button>
-    
-              <!-- Citation popup -->
-              <div id="citationPopup">
-                  <p id="citationText"></p>
-                  <button onclick="copyCitation()">Copy</button>
-                  <button onclick="closeCitation()">Close</button>
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <a href="https://docs.google.com/presentation/d/e/2PACX-1vTMh1ZCPoyyq7TR5tI1jScCflL1RNKpojOeKp-Rbve6mbj__KTjmj1U4zgD38h2X-yg0p1due7npmbN/embed?start=false&loop=false&delayms=3000">
+                <img src="/img/AGKI-DH-Einführung-Prompt-Engineering.png" class="card-img-top" alt="AGKI-DH-Einführung-Prompt-Engineering.png">
+              </a>  
+              <div class="card-body">
+                <p class="card-text">Vortragsfolien: Einführung in das Prompt Engineering, AGKI-DH Workshop von Christopher Pollin</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button onclick="showCitation('citation1')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <a href="https://www.youtube.com/watch?v=2Ihip3VEVlw&list=PLaHADNRco7n3LtUHqCwyqzAi2f8WB57Eg&index=3">
+                <img src="/img/youtube_prompt-engineering.png" class="card-img-top" alt="youtube_prompt-engineering.png">
+              </a>  
+              <div class="card-body">
+                <p class="card-text">Videovortrag: Einführung in das Prompt Engineering, Workshop Zentrum für Informationsmodellierung Graz, von Christopher Pollin</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button onclick="showCitation('citation2')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <a href="https://docs.google.com/presentation/d/1QZU5M7NcM_HhRXdYDgM-AuS5pljbAAuIVuijmGUIXMQ/edit#slide=id.p">
+                <img src="/img/vortrag_PE_pollin.png" class="card-img-top" alt="vortrag_PE_pollin.png">
+              </a>  
+              <div class="card-body">
+                <p class="card-text">Vortragsfolien: #SKILLS: GPT und Prompt Engineering - Den Projektalltag erleichtern, Vortrag im IDea_Lab, Graz von Christopher Pollin</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button onclick="showCitation('citation3')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-<section class="mt-4">
-  <h2>Prompt Engeneering</h2          
-</section>      
-<div class="album py-5 bg-body-tertiary">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
-      
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <a href="https://docs.google.com/presentation/d/e/2PACX-1vTMh1ZCPoyyq7TR5tI1jScCflL1RNKpojOeKp-Rbve6mbj__KTjmj1U4zgD38h2X-yg0p1due7npmbN/embed?start=false&loop=false&delayms=3000">
-            <img src="/img/AGKI-DH-Einführung-Prompt-Engineering.png" class="card-img-top" alt="AGKI-DH-Einführung-Prompt-Engineering.png">
-          </a>  
-          <div class="card-body">
-            <p class="card-text">Vortragsfolien: Einführung in das Prompt Engineering, AGKI-DH Workshop von Christopher Pollin</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button onclick="showCitation('citation1')" class="btn btn-sm btn-outline-secondary">Cite</button>
-    
-              <!-- Citation popup -->
-              <div id="citationPopup">
-                  <p id="citationText"></p>
-                  <button onclick="copyCitation()">Copy</button>
-                  <button onclick="closeCitation()">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <a href="https://www.youtube.com/watch?v=2Ihip3VEVlw&list=PLaHADNRco7n3LtUHqCwyqzAi2f8WB57Eg&index=3">
-            <img src="/img/youtube_prompt-engineering.png" class="card-img-top" alt="youtube_prompt-engineering.png">
-          </a>  
-          <div class="card-body">
-            <p class="card-text">Videovortrag: Einführung in das Prompt Engineering, Workshop Zentrum für Informationsmodellierung Graz, von Christopher Pollin</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button onclick="showCitation('citation2')" class="btn btn-sm btn-outline-secondary">Cite</button>
-    
-              <!-- Citation popup -->
-              <div id="citationPopup">
-                  <p id="citationText"></p>
-                  <button onclick="copyCitation()">Copy</button>
-                  <button onclick="closeCitation()">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <a href="https://docs.google.com/presentation/d/1QZU5M7NcM_HhRXdYDgM-AuS5pljbAAuIVuijmGUIXMQ/edit#slide=id.p">
-            <img src="/img/vortrag_PE_pollin.png" class="card-img-top" alt="vortrag_PE_pollin.png">
-          </a>  
-          <div class="card-body">
-            <p class="card-text">Vortragsfolien: #SKILLS: GPT und Prompt Engineering - Den Projektalltag erleichtern, Vortrag im IDea_Lab, Graz von Christopher Pollin</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button onclick="showCitation('citation3')" class="btn btn-sm btn-outline-secondary">Cite</button>
-    
-              <!-- Citation popup -->
-              <div id="citationPopup">
-                  <p id="citationText"></p>
-                  <button onclick="copyCitation()">Copy</button>
-                  <button onclick="closeCitation()">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  <div class="container py-5">      
     <section class="mt-4">
-      <h2>Generative KI und Ethik</h2          
+      <h2>Generative KI und Ethik</h2>          
     </section>
 
-  <div class="album py-5 bg-body-tertiary">
-    
-    <div class="container">
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <!-- Add content for Generative KI und Ethik here -->
+      </div>
+    </div>
 
-          </section>
-  <div class="container py-5">      
     <section class="mt-4">
-      <h2>NLP und generative KI</h2          
+      <h2>NLP und generative KI</h2>          
     </section>
 
-  <div class="album py-5 bg-body-tertiary">
-    
-  <div class="container">
-    
-      <!-- row -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
-        
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <a href="https://docs.google.com/presentation/d/e/2PACX-1vTTp050Nfw2c-NFSQrl-gyJE3rXew7JwNq19Oc_s4xBha-P34Cs1OJaAvJDurUXyMBnLXA7rNAn0Tah/embed?start=false&loop=false&delayms=3000&slide=id.g2cb26a2fa4e_0_1">
-              <img src="/img/04-RAG-Lang.png" class="card-img-top" alt="04-RAG-Lang.png">
-            </a>            
-            <div class="card-body">
-              <p class="card-text">Vortragsfolien: Retrieval Augmented Generation (Christian Lang)</p>
-              <div class="d-flex justify-content-between align-items-center">
-               
-             <button onclick="showCitation('citation2')" class="btn btn-sm btn-outline-secondary">Cite</button>
-    
-            <!-- Citation popup -->
-            <div id="citationPopup">
-                <p id="citationText"></p>
-                <button onclick="copyCitation()">Copy</button>
-                <button onclick="closeCitation()">Close</button>
-    
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <a href="https://docs.google.com/presentation/d/e/2PACX-1vTTp050Nfw2c-NFSQrl-gyJE3rXew7JwNq19Oc_s4xBha-P34Cs1OJaAvJDurUXyMBnLXA7rNAn0Tah/embed?start=false&loop=false&delayms=3000&slide=id.g2cb26a2fa4e_0_1">
+                <img src="/img/04-RAG-Lang.png" class="card-img-top" alt="04-RAG-Lang.png">
+              </a>            
+              <div class="card-body">
+                <p class="card-text">Vortragsfolien: Retrieval Augmented Generation (Christian Lang)</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button onclick="showCitation('citation4')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-   </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const citations = {
+    citation0: "Pollin, C. (2024). "LLM, Token und Embedding": Grundbegriffe Generative. AGKI-AG. https://agki-dh.github.io/pages/page-3.html",
+    citation1: "Pollin, C. (2024). Einführung in das Prompt Engineering. https://www.youtube.com/watch?v=2Ihip3VEVlw&list=PLaHADNRco7n3LtUHqCwyqzAi2f8WB57Eg&index=4",
+    citation2: "Pollin, C. (2023). Einführung in das Prompt Engineering. AGKI-AG. https://agki-dh.github.io/pages/page-3.html",
+    citation3: "Pollin, C. (2024). #SKILLS: GPT und Prompt Engineering - Den Projektalltag erleichtern. Vortrag im IDEA-Lab Graz. https://docs.google.com/presentation/d/1QZU5M7NcM_HhRXdYDgM-AuS5pljbAAuIVuijmGUIXMQ/edit#slide=id.p",
+    citation4: "Lang, C. (2024). Retrieval Augmented Generation (RAG) – Externe Wissensbasen für Large Language Models am Beispiel deutscher Grammatik. AGKI-AG. https://agki-dh.github.io/pages/page-5.html"
+  };
+
+  function showCitation(citationId) {
+    const citationPopup = document.getElementById('citationPopup');
+    const citationText = document.getElementById('citationText');
+    const citation = citations[citationId];
+    
+    if (citation) {
+      citationText.textContent = citation;
+      citationPopup.style.display = 'block';
+    } else {
+      alert('Citation not found!');
+    }
+  }
+
+  function copyCitation() {
+    const citationText = document.getElementById('citationText').textContent;
+    navigator.clipboard.writeText(citationText).then(() => {
+      alert('Citation copied to clipboard!');
+    });
+  }
+
+  function closeCitation() {
+    document.getElementById('citationPopup').style.display = 'none';
+  }
+</script>
+
+<!-- Citation popup -->
+<div id="citationPopup" style="display: none;">
+  <p id="citationText"></p>
+  <button onclick="copyCitation()">Copy</button>
+  <button onclick="closeCitation()">Close</button>
+</div>
