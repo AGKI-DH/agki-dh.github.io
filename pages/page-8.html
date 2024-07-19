@@ -100,7 +100,7 @@
   </section>
   <script>
         const citations = {
-            citation0: "Pollin, C. (2024). \"LLM, Token und Embedding\": Grundbegriffe Generative. AGKI-AG. https://agki-dh.github.io/pages/page-3.html"
+            citation0: "Sarah Oberbichler (21. Juni 2024). Large-Scale Research with Historical Newspapers: A Turning Point through Generative AI. Digital Humanities Lab. Abgerufen am 19. Juli 2024 von https://doi.org/10.58079/11v9i"
 
         function showCitation(citationId) {
             const citationPopup = document.getElementById('citationPopup');
@@ -125,7 +125,63 @@
         function closeCitation() {
             document.getElementById('citationPopup').style.display = 'none';
         }
-  </script>  
+  </script>
+  <div class="container py-5">      
+    <section class="mt-4">
+      <h2>(M)LLMs and LVMs in geisteswissenschaftlichen Workflows</h2>          
+    </section>
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <a href="https://dhlab.hypotheses.org/4938">
+                <img src="/img/blog_oberbichler.png" class="card-img-top" alt="blog_oberbichler.png">
+              </a>  
+              <div class="card-body">
+                <p class="card-text">Blog Post: Large-Scale Research with Historical Newspapers: A Turning Point through Generative AI, DH-Lab Blog, von Sarah Oberbichler</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button onclick="showCitation('citation0')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                  <!-- Citation popup -->
+                  <div id="citationPopup">
+                    <p id="citationText"></p>
+                    <button onclick="copyCitation()">Copy</button>
+                    <button onclick="closeCitation()">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div
+          <div class="album py-5 bg-body-tertiary">
+
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <a href="https://docs.google.com/presentation/d/170R1agO69mSxGfNTz-1GdBPNTxmmUGDa1xfdGs7iGNs/edit#slide=id.g25826654c24_0_0">
+                <img src="/img/wissenSchaffen_Pollin.png" class="card-img-top" alt="03-AGKI-Schiller-Stoff.png">
+              </a>  
+              <div class="card-body">
+                <p class="card-text">Vortragsfolien: Wissen schaffen (lassen!?)”. Workflows mit Generativer KI in den Digital Humanities, DH-Tag Münster, von Christopher Pollin </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button onclick="showCitation('citation1')" class="btn btn-sm btn-outline-secondary">Cite</button>
+                  <!-- Citation popup -->
+                  <div id="citationPopup">
+                    <p id="citationText"></p>
+                    <button onclick="copyCitation()">Copy</button>
+                    <button onclick="closeCitation()">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-4">
+      <h2>(M)Lehrmaterial für die Universität</h2>          
+    </section>
 
 <footer class="text-body-secondary py-5">
   <div class="container">
