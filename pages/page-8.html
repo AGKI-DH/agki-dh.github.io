@@ -98,6 +98,34 @@
       </div>
     </div>
   </section>
+  <script>
+        const citations = {
+            citation0: "Pollin, C. (2024). \"LLM, Token und Embedding\": Grundbegriffe Generative. AGKI-AG. https://agki-dh.github.io/pages/page-3.html"
+
+        function showCitation(citationId) {
+            const citationPopup = document.getElementById('citationPopup');
+            const citationText = document.getElementById('citationText');
+            const citation = citations[citationId];
+            
+            if (citation) {
+                citationText.textContent = citation;
+                citationPopup.style.display = 'block';
+            } else {
+                alert('Citation not found!');
+            }
+        }
+
+        function copyCitation() {
+            const citationText = document.getElementById('citationText').textContent;
+            navigator.clipboard.writeText(citationText).then(() => {
+                alert('Citation copied to clipboard!');
+            });
+        }
+
+        function closeCitation() {
+            document.getElementById('citationPopup').style.display = 'none';
+        }
+  </script>  
 
 <footer class="text-body-secondary py-5">
   <div class="container">
