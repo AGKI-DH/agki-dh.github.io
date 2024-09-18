@@ -1,75 +1,76 @@
-/* CSS styling for the frame and links */
+/* General styles */
+body {
+    padding-top: 56px; /* Adjust based on navbar height */
+}
+
+html {
+    scroll-padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Navbar styles */
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar-scrolled {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Link frame styles */
 .link-frame {
-    border: 2px solid black; /* Solid black border */
-    padding: 20px; /* Padding around the content inside the frame */
-    margin: 20px 0; /* Margin outside the frame */
-  }
-  .link-frame a {
-    display: block; /* Each link will take up its own line */
-    margin: 10px 0; /* Margin between links */
-    color: black; /* Text color for the links */
-    text-decoration: none; /* No underline for links */
-  }
-  .link-frame a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
-  }
-  
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-  
-  .b-example-divider {
     width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-  }
-  
-  .b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
-  }
-  
-  .bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-  }
-  
-  .nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-  }
-  
-  .nav-scroller .nav {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.link-container {
     display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .btn-bd-primary {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.link-column {
+    width: 45%;
+}
+
+.link-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-column li {
+    margin-bottom: 10px;
+}
+
+.link-column a {
+    text-decoration: none;
+    color: #0066cc;
+    display: block;
+}
+
+.link-column a:hover {
+    text-decoration: underline;
+}
+
+/* Citation popup styles */
+#citationPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Keep any custom button styles you're using */
+.btn-bd-primary {
     --bd-violet-bg: #712cf9;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-  
+
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--bd-violet-bg);
@@ -81,13 +82,9 @@
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #5a23c8;
     --bs-btn-active-border-color: #5a23c8;
-  }
-  
-  .bd-mode-toggle {
-    z-index: 1500;
-  }
-  
-  .bd-mode-toggle .dropdown-menu .active .bi {
-    display: block !important;
-  }
-  
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    /* Add any specific styles for larger screens here */
+}
