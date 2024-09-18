@@ -53,6 +53,15 @@ html {
     text-decoration: underline;
 }
 
+
+/* Card title styling */
+.card-title {
+    font-size: 1.1rem; 
+    line-height: 1.3;   
+    margin-bottom: 0.5rem;
+    font-weight: 500; 
+}
+
 /* Citation popup styles */
 #citationPopup {
     position: fixed;
