@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+      content="The Applied Generative AI in Digital Humanities (AGKI-DH) working group focuses on exploring and showcasing the applications of generative AI, especially Large Language Models (LLMs), in digital humanities. This includes both commercial and open-source models, recognizing the significant advancements and the widespread discussion on AI issues like bias, hallucination, high computational footprint, data security, and potential destructive capabilities. Amidst these challenges, the group aims to harness the opportunities in AI development for digital humanities, fostering an ongoing exchange on core AI concepts and practical experiences. It seeks collaboration with other groups on greening (AI footprint), digital humanities theory, and empowerment (ethical aspects). The goals include identifying, assessing, and categorizing generative AI applications in digital humanities, establishing best practices, developing evaluation criteria, facilitating discussions and knowledge exchange, and balancing opportunities and risks.">
+    <meta name="keywords"
+      content="Generative AI, Digital Humanities, Dhd, Large Language Models, Open Source AI, AI in Humanities, Best Practices in AI">
+    <meta name="author" content="Christopher Pollin, Gerrit Brüning">
+    <title>Abstracts zum Workshop: Generative KI in den Digitalen Geisteswissenschaften</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/style.css">
+  </head>
+  <body>
+    <header data-bs-theme="dark" class="fixed-top">
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="../../index.html" class="navbar-brand d-flex align-items-center fs-3">
+            <strong>AGKI-DH</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Abstracts zum Workshop<br />(Generative) KI für Kultur- und
+              Textdaten</h1>
+          </div>
+        </div>
+      </section>
+      <div class="container py-5">
+        <section class="mt-4">
+          <h2><strong>Intuition vs. Präzision – LLMs in der Ontologieentwicklung</strong><br>
+            Harald Sack, Karlsruhe</h2>
+          <p>Die Entwicklung präziser und aussagekräftiger Ontologien erfordert eine enge
+            Zusammenarbeit zwischen Ontologieexperten und Domain-Spezialisten. Der erforderliche
+            Wissenstransfer zwischen diesen Gruppen ist oft zeitaufwendig und komplex. Large
+            Language Models (LLMs) bieten vielversprechende Ansätze, um diesen Prozess zu
+            automatisieren und zu beschleunigen. In verschiedenen Phasen des Ontologie-Lebenszyklus
+            können LLMs unterstützen, beispielsweise bei der Generierung von Begriffsvorschlägen,
+            der Überprüfung von Konsistenzen oder der Erstellung von Definitionen. Der Vortrag
+            beleuchtet verschiedene Einsatzmöglichkeiten von LLMs in der Ontologieentwicklung,
+            diskutiert dabei sowohl Chancen als auch Risiken und präsentiert erste Ergebnisse aus
+            aktuellen Forschungsprojekten.</p>
+        </section>
+        <section class="mt-4">
+          <h2><strong>Named Entity Recognition und Linking in deutschsprachigen Zeitungstexten – Wie
+              können (L)LMs unterstützen?</strong><br> Pia Schwarz, Mannheim</h2>
+          <p>Um auf sprachwissenschaftliche Fragen Antwort zu finden, braucht es vor allem eine gute
+            Datengrundlage. Bezogen auf Textdaten sind diese im besten Fall ausreichend annotiert
+            und gut durchsuchbar. Textkorpora wie das Deutsche Referenzkorpus DeReKo[1] mit großen
+            Mengen an Zeitungstexten bieten eine hervorragende Datenquelle – verlinkte Entitäten
+            sind dort allerdings noch nicht vorhanden. Mit Modellen für Named Entity Recognition
+            können automatisiert Eigennamen annotiert und diese Ergebnisse wiederum mithilfe von
+            Entity Linking Modellen verlinkt werden: beispielsweise mit Datenbanken wie Wikidata
+            oder der Gemeinsamen Normdatei, die zusätzlichen Kontext zu einer Entität liefern. Im
+            Idealfall werden so weitere Zusammenhänge aufgedeckt und Entitäten besser disambiguiert.
+            Im Fall von DeReKo ließen sich dann gezielt thematisch zusammenhängende Subsets des
+            Gesamtkorpus extrahieren. In diesem Beitrag werden mehrere Entity Linker für
+            deutschsprachige Texte evaluiert und beleuchtet, inwiefern generative große
+            Sprachmodelle dabei unterstützen können.</p>
+          <p>[1] Leibniz-Institut für Deutsche Sprache (2024): Deutsches Referenzkorpus / Archiv der
+            Korpora geschriebener Gegenwartssprache 2024-I-RC3 (RC vom 13.03.2024). Mannheim:
+            Leibniz-Institut für Deutsche Sprache. www.ids-mannheim.de/dereko</p>
+        </section>
+      </div>
+    </main>
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="mb-1">AG Angewandte Generative KI in den Digitalen Geisteswissenschaften
+          (AGKI-DH)</p>
+        <p class="mb-1">2024. Convenors: Christopher Pollin, Gerrit Brüning, Sarah Oberbichler</p>
+        <p class="mb-0">Based on <a href="https://getbootstrap.com/">Bootstrap 5</a></p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
