@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Workshop zu fortgeschrittenem Prompt und AI Agent Engineering für wissenschaftliche Textproduktion. Theoretischer Input zu Best Practices kombiniert mit praktischen Hands-on Sessions.">
+    <meta name="keywords" content="Prompt Engineering, AI Agent, Digital Humanities, Workshop, KI-gestützte Textgenerierung, wissenschaftliches Schreiben, AGKI-DH">
+    <meta name="author" content="AG Angewandte Generative KI, AG Digitales Publizieren">
+    <title>Fortgeschrittenes Prompt und AI Agent Engineering - AGKI-DH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #212529 !important;
+        }
+        .nav-link {
+            color: white !important;
+            text-decoration: none;
+        }
+        .info-box {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin: 2rem 0;
+        }
+        .card {
+            border-radius: 0.5rem;
+            border: 1px solid rgba(0,0,0,.125);
+            margin-bottom: 1rem;
+        }
+        .main-title {
+            color: #2c3e50;
+            font-weight: 300;
+        }
+        .subtitle {
+            color: #666;
+            font-weight: 300;
+        }
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 2rem 0;
+        }
+        .schedule-time {
+            color: #721c24;
+            font-weight: 500;
+        }
+        .schedule-item {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#">AGKI-DH</a>
+            <div class="d-flex">
+                <a href="#" class="nav-link px-3">Webinare</a>
+                <a href="#" class="nav-link px-3">Aktivitäten</a>
+                <a href="#" class="nav-link px-3">Ressourcen</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 100px;">
+        <!-- Title Section -->
+        <div class="text-center mb-4">
+            <h1 class="main-title">Fortgeschrittenes Prompt und AI Agent Engineering</h1>
+            <p class="subtitle fs-4">Ein Workshop für wissenschaftliche Textproduktion</p>
+        </div>
+
+        <!-- Abstract Section -->
+        <div class="card mb-5">
+            <div class="card-body">
+                <h2 class="h5 mb-3">Abstract</h2>
+                <p class="mb-0">
+                    Dieser eintägige Workshop der AG Angewandte Generative KI und der AG Digitales Publizieren 
+                    konzentriert sich auf fortgeschrittenes Prompt und AI Agent Engineering für die Textproduktion 
+                    in wissenschaftlichen Kontexten. Er kombiniert theoretischen Input zu Best Practices und 
+                    fortgeschrittenen Techniken mit praktischen Hands-on Sessions. Schwerpunkte sind die 
+                    Vereinbarkeit von KI-gestützter Textgenerierung mit guter wissenschaftlicher Praxis sowie 
+                    eine Einführung in die Implementierung und Evaluation von KI-Agenten. Durch die Arbeit an 
+                    selbstgewählten Themen der Teilnehmenden bietet dieser Workshop eine praxisnahe und 
+                    wissenschaftlich fundierte Weiterbildung im Bereich der KI-gestützten Textproduktion und 
+                    vermittelt zusätzlich fortgeschrittenes Prompt Engineering.
+                </p>
+            </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box text-center mb-5">
+            <h1 class="main-title">Fortgeschrittenes Prompt und AI Agent Engineering</h1>
+            <p class="subtitle fs-4">Ein Workshop für wissenschaftliche Textproduktion</p>
+            
+            <div class="info-box text-center">
+                <span class="fw-bold">Datum:</span> Ganztägig | 
+                <span class="fw-bold">Teilnehmer:</span> Max. 20 Personen
+            </div>
+        </div>
+
+        <!-- Requirements Section -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">Voraussetzungen</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">✓ Grundkenntnisse in LLM und Prompt Engineering</li>
+                            <li class="mb-2">✓ Python-Kenntnisse von Vorteil</li>
+                            <li class="mb-2">✓ Eigener Laptop</li>
+                            <li>✓ Zugang zu fortgeschrittenem Chatbot</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">Vorbereitung</h2>
+                        <p>Bitte erstellen Sie ein maximal zweiseitiges Exposé zu einem selbst gewählten Thema Ihrer Expertise mit:</p>
+                        <ul>
+                            <li>Spezifizierter Zielgruppe</li>
+                            <li>Textformat (Blog, Paper, etc.)</li>
+                            <li>Mind. 5 wichtige Quellen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">Technische Anforderungen</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">💻 Eigener Laptop</li>
+                            <li class="mb-2">🤖 Zugang zu GPT-4-Tier-Modell</li>
+                            <li class="mb-2">📡 WLAN wird bereitgestellt</li>
+                            <li>🔌 API Zugang (optional)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preparation Materials Section -->
+        <div class="mb-5">
+            <h2 class="main-title mb-4">Vorbereitungsmaterialien</h2>
+            
+            <!-- Video Preparation -->
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-3">
+                    <h3 class="h5 mb-0">💡 Empfohlene Video-Tutorials</h3>
+                    <a href="https://youtu.be/zjkBMFhNj_g?si=yHluX39tsvAoHfgQ" target="_blank" class="btn btn-outline-light btn-sm">Zur Playlist</a>
+                </div>
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/zjkBMFhNj_g?si=yHluX39tsvAoHfgQ" title="Workshop Vorbereitungsvideos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reading Materials -->
+            <div class="card">
+                <div class="card-header bg-dark text-white py-3">
+                    <h3 class="h5 mb-0">📚 Vorbereitende Literatur</h3>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="readingList">
+                        <!-- Core Readings -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coreLiterature">
+                                    Kernliteratur (bitte vorab lesen)
+                                </button>
+                            </h4>
+                            <div id="coreLiterature" class="accordion-collapse collapse show" data-bs-parent="#readingList">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">1.</div>
+                                                <div>
+                                                    <p class="mb-1">Amatriain, Xavier. 2024. „Prompt Design and Engineering: Introduction and Advanced Methods"</p>
+                                                    <a href="https://doi.org/10.48550/arXiv.2401.14423" target="_blank" class="btn btn-outline-primary btn-sm">DOI</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">2.</div>
+                                                <div>
+                                                    <p class="mb-1">Sahoo, Pranab, et al. 2024. „A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications"</p>
+                                                    <a href="https://doi.org/10.48550/arXiv.2402.07927" target="_blank" class="btn btn-outline-primary btn-sm">DOI</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">3.</div>
+                                                <div>
+                                                    <p class="mb-1">Pollin, Christopher. 2024. „Workshopreihe ‚Angewandte Generative KI in den (digitalen) Geisteswissenschaften'"</p>
+                                                    <a href="https://doi.org/10.5281/zenodo.10647754" target="_blank" class="btn btn-outline-primary btn-sm">DOI</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Readings -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#additionalLiterature">
+                                    Weiterführende Literatur
+                                </button>
+                            </h4>
+                            <div id="additionalLiterature" class="accordion-collapse collapse" data-bs-parent="#readingList">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">1.</div>
+                                                <div>
+                                                    <p class="mb-1">Schulhoff, Sander, et al. 2024. „The Prompt Report: A Systematic Survey of Prompting Techniques"</p>
+                                                    <a href="https://doi.org/10.48550/arXiv.2406.06608" target="_blank" class="btn btn-outline-primary btn-sm">DOI</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">2.</div>
+                                                <div>
+                                                    <p class="mb-1">Chukwuere, Joshua Ebere. 2024. „Today's Academic Research: The Role of ChatGPT Writing"</p>
+                                                    <a href="https://doi.org/10.51519/journalisi.v6i1.639" target="_blank" class="btn btn-outline-primary btn-sm">DOI</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">3.</div>
+                                                <div>
+                                                    <p class="mb-1">Geng, Mingmeng and Roberto Trotta. 2024. „Is ChatGPT Transforming Academics' Writing Style?"</p>
+                                                    <a href="https://doi.org/10.48550/arXiv.2404.08627" target="_blank" class="btn btn-outline-primary btn-sm">DOI</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Online Resources -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#onlineResources">
+                                    Online-Ressourcen & Tutorials
+                                </button>
+                            </h4>
+                            <div id="onlineResources" class="accordion-collapse collapse" data-bs-parent="#readingList">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">1.</div>
+                                                <div>
+                                                    <p class="mb-1">AI Explained. 2024. AI Insiders Patreon</p>
+                                                    <a href="https://www.patreon.com/AIExplained" target="_blank" class="btn btn-outline-primary btn-sm">Link</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 text-primary me-2">2.</div>
+                                                <div>
+                                                    <p class="mb-1">Ng, Andrew: Andrew Ng On AI Agentic Workflows And Their Potential</p>
+                                                    <a href="https://youtu.be/q1XFm21I-VQ" target="_blank" class="btn btn-outline-primary btn-sm">YouTube</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Schedule Section -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="h5 mb-4">Vormittag (09:00 - 12:30)</h2>
+                        
+                        <div class="accordion" id="morningSchedule">
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#morning1">
+                                    <div class="schedule-time">09:00 - 09:30</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Einführung und Vorstellungsrunde</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="morning1" class="collapse" data-bs-parent="#morningSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Begrüßung und Vorstellungsrunde<br>
+                                        • Workshop-Ziele und Agenda<br>
+                                        • Plenumsdiskussion: Wissensstand und individuelle Ziele
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#morning2">
+                                    <div class="schedule-time">09:30 - 10:15</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Gute wissenschaftliche Praxis und KI-gestützte Textgenerierung</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="morning2" class="collapse" data-bs-parent="#morningSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Ethische Aspekte der KI-Nutzung<br>
+                                        • Best Practices für wissenschaftliche Integrität<br>
+                                        • Transparenz und Nachvollziehbarkeit<br>
+                                        • Aktuelle Richtlinien und Standards
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#morning3">
+                                    <div class="schedule-time">10:25 - 11:45</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Best Practices im Prompt Engineering</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="morning3" class="collapse" data-bs-parent="#morningSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Grundlagen des Prompt Engineering<br>
+                                        • Schreibstile und Ideengenerierung<br>
+                                        • Strukturierte Gliederungserstellung<br>
+                                        • Context Window und Prompt Chaining
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#morning4">
+                                    <div class="schedule-time">11:45 - 12:30</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Fortgeschrittene Prompt Engineering-Techniken</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="morning4" class="collapse" data-bs-parent="#morningSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Zero- und Few-Shot Learning<br>
+                                        • Chain of Thought und Tree of Thought<br>
+                                        • Self-Consistency und Iterative Prompting<br>
+                                        • Context Building und Compression
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="h5 mb-4">Nachmittag (13:30 - 17:30)</h2>
+                        
+                        <div class="accordion" id="afternoonSchedule">
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#afternoon1">
+                                    <div class="schedule-time">13:30 - 15:00</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>"Prompt-Werkstatt" I</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="afternoon1" class="collapse" data-bs-parent="#afternoonSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Praktische Übungen mit Code-Interpreter<br>
+                                        • Arbeit mit Claude Artefact<br>
+                                        • Integration verschiedener Medientypen<br>
+                                        • Präsentation und Diskussion der Ergebnisse
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#afternoon2">
+                                    <div class="schedule-time">15:00 - 15:30</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Einführung in das AI-Agent-Engineering</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="afternoon2" class="collapse" data-bs-parent="#afternoonSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Multi-Agent-Frameworks<br>
+                                        • Design Patterns und Flow Engineering<br>
+                                        • Praktische Implementierungsbeispiele<br>
+                                        • Bibliotheken und Tools (AutoGen, CrewAI, LangGraph)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#afternoon3">
+                                    <div class="schedule-time">15:45 - 16:45</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>"Prompt-Werkstatt" II</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="afternoon3" class="collapse" data-bs-parent="#afternoonSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Praktische Arbeit mit AI Agents<br>
+                                        • Integration von RAG und Actions<br>
+                                        • Hands-On mit Python + Jupyter Notebook<br>
+                                        • Datengetriebene und multimodale Ansätze
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <div class="schedule-item" role="button" data-bs-toggle="collapse" data-bs-target="#afternoon4">
+                                    <div class="schedule-time">16:45 - 17:30</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Abschlussdiskussion und Zusammenfassung</div>
+                                        <small class="text-muted">▼</small>
+                                    </div>
+                                </div>
+                                <div id="afternoon4" class="collapse" data-bs-parent="#afternoonSchedule">
+                                    <div class="pt-3 ps-3 text-muted">
+                                        • Reflexion der Lernergebnisse<br>
+                                        • Diskussion von Anwendungsmöglichkeiten<br>
+                                        • Feedback und Ausblick<br>
+                                        • Nächste Schritte
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Objectives Section -->
+        <div class="mb-5">
+            <h2 class="main-title mb-4">Inhalte und Lernziele</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="h5 mb-3">Sie lernen:</h3>
+                    <ul>
+                        <li>Analyse des Einflusses von KI auf Schreibprozesse</li>
+                        <li>Ethische, rechtliche und professionelle Aspekte</li>
+                        <li>Fortgeschrittene Prompt Engineering-Techniken</li>
+                        <li>Implementierung von KI-Agenten</li>
+                        <li>Evaluierungsmethoden und Metriken</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slides Section -->
+        <div class="mb-5">
+            <h2 class="main-title mb-4">Folien</h2>
+            <div class="card">
+                <div class="card-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR6HV_T-AA3VSYDZhCZYUTgNxVwVnZA3e6oN2aAMncqtKHo-w22PmqyFNXZ1pwn6lqc08da0eunRTmr/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speakers Section -->
+        <div class="mb-5">
+            <h2 class="main-title mb-4">Vortragende</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5">Christopher Pollin</h3>
+                            <p class="text-muted mb-0">AG AGKI, Digital Humanities Craft OG</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5">Timo Steyer</h3>
+                            <p class="text-muted mb-0">AG Publizieren, Universitätsbibliothek Braunschweig</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5">Martina Scholger</h3>
+                            <p class="text-muted mb-0">Institut für Digitale Geisteswissenschaften</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5">Sebastian David Schiller-Stoff</h3>
+                            <p class="text-muted mb-0">Institut für Digitale Geisteswissenschaften</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-1">AG Angewandte Generative KI in den Digitalen Geisteswissenschaften (AGKI-DH)</p>
+            <p class="mb-0">2024. Convenors: Christopher Pollin, Gerrit Brüning, Sarah Oberbichler</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
