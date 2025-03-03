@@ -9,60 +9,109 @@
     <title>Fortgeschrittenes Prompt und AI Agent Engineering - AGKI-DH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { font-size: 0.9rem; }
-        .navbar { background-color: #212529 !important; }
-        .nav-link { color: white !important; text-decoration: none; }
-        .info-box { background-color: #e3f2fd; padding: 0.75rem; border-radius: 0.25rem; margin: 1rem 0; }
-        .card { border-radius: 0.5rem; border: 1px solid rgba(0,0,0,.125); margin-bottom: 0.75rem; }
-        .card-body { padding: 0.75rem; }
-        .card-header { padding: 0.5rem 0.75rem; }
-        .main-title { color: #2c3e50; font-weight: 300; margin-bottom: 0.5rem; }
-        .subtitle { color: #666; font-weight: 300; }
-        footer { background-color: #212529; color: white; padding: 1rem 0; font-size: 0.8rem; }
+        body { font-size: 1rem; }
+        .navbar { 
+            background-color: #212529 !important; 
+            padding: 0.75rem 0;
+        }
+        .nav-link { 
+            color: white !important; 
+            text-decoration: none; 
+            margin-left: 1rem;
+        }
+        .info-box { 
+            background-color: #e3f2fd; 
+            padding: 0.75rem; 
+            border-radius: 0.25rem; 
+            margin: 1.5rem 0; 
+        }
+        .card { 
+            border-radius: 0.5rem; 
+            border: 1px solid rgba(0,0,0,.125); 
+            margin-bottom: 1rem; 
+            height: 100%;
+        }
+        .card-header { 
+            padding: 0.75rem 1rem;
+            background-color: #212529;
+            color: white;
+        }
+        .main-title { 
+            color: #2c3e50; 
+            font-weight: 400;
+            margin: 1.5rem 0 0.5rem 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .subtitle { 
+            color: #666; 
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        footer { 
+            background-color: #212529; 
+            color: white; 
+            padding: 1rem 0; 
+            margin-top: 2rem;
+        }
         ul { margin-bottom: 0.5rem; }
-        li { margin-bottom: 0.25rem; }
-        h2.h5 { margin-bottom: 0.25rem; }
-        .compact-list li { margin-bottom: 0.2rem; }
+        li { margin-bottom: 0.5rem; }
+        .card-body { padding: 1rem; }
+        .abstract { 
+            margin: 1rem 0 1.5rem 0;
+            text-align: justify;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            background-color: #f8f9fa;
+        }
+        .vortragende {
+            margin-top: 1.5rem;
+        }
+        .vortragende-title {
+            color: #2c3e50;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        .vortragende-card {
+            padding: 0.75rem;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-dark fixed-top">
+    <nav class="navbar navbar-dark">
         <div class="container">
-            <a class="navbar-brand fs-4" href="#">AGKI-DH</a>
+            <a class="navbar-brand fs-3" href="#">AGKI-DH</a>
             <div class="d-flex">
-                <a href="#" class="nav-link px-2">Webinare</a>
-                <a href="#" class="nav-link px-2">Aktivitäten</a>
-                <a href="#" class="nav-link px-2">Ressourcen</a>
+                <a href="#" class="nav-link">Webinare</a>
+                <a href="#" class="nav-link">Aktivitäten</a>
+                <a href="#" class="nav-link">Ressourcen</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="container" style="margin-top: 70px;">
+    <main class="container">
         <!-- Title Section -->
-        <div class="text-center mb-2">
-            <h1 class="main-title fs-3">Fortgeschrittenes Prompt und AI Agent Engineering</h1>
-            <p class="subtitle mb-0">Ein Workshop für wissenschaftliche Textproduktion</p>
-        </div>
+        <h1 class="main-title">Fortgeschrittenes Prompt und AI Agent Engineering</h1>
+        <p class="subtitle fs-5">Ein Workshop für wissenschaftliche Textproduktion</p>
 
         <!-- Info Box -->
-        <div class="info-box text-center mb-3">
-            <div class="d-flex justify-content-center">
-                <span class="fw-bold me-2">Datum:</span> 04.03.2025 | Ganztägig 
-                <span class="fw-bold mx-2">Teilnehmer:</span> 20 Personen
-            </div>
+        <div class="info-box text-center">
+            <span class="fw-bold">Datum:</span> 04.03.2025 | Ganztägig 
+            <span class="fw-bold ms-3">Teilnehmer:</span> 20 Personen
         </div>
 
-        <div class="row g-2 mb-3">
+        <div class="row g-3 mb-4">
             <!-- Requirements Card -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-header bg-dark text-white py-2">
+                <div class="card">
+                    <div class="card-header">
                         <h2 class="h5 mb-0">Voraussetzungen</h2>
                     </div>
                     <div class="card-body">
-                        <ul class="list-unstyled compact-list">
+                        <ul class="list-unstyled">
                             <li>✓ Grundkenntnisse in LLM und Prompt Engineering</li>
                             <li>✓ Python-Kenntnisse von Vorteil</li>
                             <li>✓ Eigener Laptop</li>
@@ -74,12 +123,12 @@
 
             <!-- Materials Card -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-header bg-dark text-white py-2">
+                <div class="card">
+                    <div class="card-header">
                         <h2 class="h5 mb-0">Materialien</h2>
                     </div>
                     <div class="card-body">
-                        <ul class="compact-list">
+                        <ul>
                             <li><a href="https://docs.google.com/presentation/d/1WW4Xf0y4xpiV-Ij1MosrcwCcNJRjbCEGVWUO4Kbo744/edit?usp=sharing" target="_blank">Workshop-Folien</a></li>
                             <li>Amatriain, Xavier. 2024. „Prompt Design and Engineering"</li>
                             <li>Sahoo, Pranab, et al. 2024. „Survey of Prompt Engineering"</li>
@@ -91,12 +140,12 @@
 
             <!-- Learning Objectives Card -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-header bg-dark text-white py-2">
+                <div class="card">
+                    <div class="card-header">
                         <h2 class="h5 mb-0">Lernziele</h2>
                     </div>
                     <div class="card-body">
-                        <ul class="compact-list">
+                        <ul>
                             <li>Analyse des Einflusses von KI auf wissenschaftliche Schreibprozesse</li>
                             <li>Ethische, rechtliche und professionelle Aspekte</li>
                             <li>Fortgeschrittene Prompt Engineering-Techniken</li>
@@ -108,50 +157,48 @@
         </div>
 
         <!-- Abstract Section -->
-        <div class="card mb-3">
-            <div class="card-body">
-                <p class="mb-0 small">
-                    Dieser eintägige Workshop konzentriert sich auf fortgeschrittenes Prompt und AI Agent Engineering für die wissenschaftliche Textproduktion. 
-                    Er kombiniert theoretischen Input zu Best Practices mit praktischen Hands-on Sessions. 
-                    Schwerpunkte sind die Vereinbarkeit von KI-gestützter Textgenerierung mit guter wissenschaftlicher Praxis sowie 
-                    die Implementierung und Evaluation von KI-Agenten. Durch die Arbeit an selbstgewählten Themen bietet der Workshop eine praxisnahe Weiterbildung.
-                </p>
-            </div>
+        <div class="abstract">
+            <p class="mb-0">
+                Dieser eintägige Workshop konzentriert sich auf fortgeschrittenes Prompt und AI Agent Engineering für die wissenschaftliche Textproduktion. 
+                Er kombiniert theoretischen Input zu Best Practices mit praktischen Hands-on Sessions. 
+                Schwerpunkte sind die Vereinbarkeit von KI-gestützter Textgenerierung mit guter wissenschaftlicher Praxis sowie 
+                die Implementierung und Evaluation von KI-Agenten. Durch die Arbeit an selbstgewählten Themen bietet der Workshop eine praxisnahe Weiterbildung.
+            </p>
         </div>
 
         <!-- Speakers Section -->
-        <div class="mb-2">
-            <h2 class="main-title mb-2 fs-5">Vortragende</h2>
-            <div class="row g-2">
+        <div class="vortragende">
+            <h2 class="vortragende-title">Vortragende</h2>
+            <div class="row g-3">
                 <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body py-2">
-                            <h3 class="h6 mb-0">Christopher Pollin</h3>
-                            <p class="text-muted mb-0 small">AG AGKI, Digital Humanities</p>
+                    <div class="card">
+                        <div class="card-body vortragende-card">
+                            <h3 class="h6 mb-1">Christopher Pollin</h3>
+                            <p class="text-muted mb-0">AG AGKI, Digital Humanities</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body py-2">
-                            <h3 class="h6 mb-0">Timo Steyer</h3>
-                            <p class="text-muted mb-0 small">AG Publizieren, UB Braunschweig</p>
+                    <div class="card">
+                        <div class="card-body vortragende-card">
+                            <h3 class="h6 mb-1">Timo Steyer</h3>
+                            <p class="text-muted mb-0">AG Publizieren, UB Braunschweig</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body py-2">
-                            <h3 class="h6 mb-0">Martina Scholger</h3>
-                            <p class="text-muted mb-0 small">Institut für Digitale GW</p>
+                    <div class="card">
+                        <div class="card-body vortragende-card">
+                            <h3 class="h6 mb-1">Martina Scholger</h3>
+                            <p class="text-muted mb-0">Institut für Digitale GW</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body py-2">
-                            <h3 class="h6 mb-0">Sebastian Schiller-Stoff</h3>
-                            <p class="text-muted mb-0 small">Institut für Digitale GW</p>
+                    <div class="card">
+                        <div class="card-body vortragende-card">
+                            <h3 class="h6 mb-1">Sebastian Schiller-Stoff</h3>
+                            <p class="text-muted mb-0">Institut für Digitale GW</p>
                         </div>
                     </div>
                 </div>
@@ -160,9 +207,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-3">
+    <footer>
         <div class="container">
-            <p class="mb-0 small">AG Angewandte Generative KI in den Digitalen Geisteswissenschaften (AGKI-DH) | 2024</p>
+            <p class="mb-0">AG Angewandte Generative KI in den Digitalen Geisteswissenschaften (AGKI-DH) | 2024</p>
         </div>
     </footer>
 
