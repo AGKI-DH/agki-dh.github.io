@@ -1,0 +1,51 @@
+{
+  "title": "AGKI-DH — DHd-AG Angewandte Generative KI in den Digitalen Geisteswissenschaften",
+  "upload_type": "software",
+  "description": "Website der DHd-Arbeitsgruppe \"Angewandte Generative KI in den Digitalen Geisteswissenschaften\" (AGKI-DH). Die AG widmet sich der Erforschung und Anwendung generativer KI, insbesondere Large Language Models (LLMs), in den digitalen Geisteswissenschaften. Das Repository enthält die Quelltexte der öffentlichen Website (https://agki-dh.github.io) mit Ankündigungen und Dokumentation der Webinare, Workshops, AG-Meetings sowie einer Sammlung von Ressourcen und Best Practices.",
+  "creators": [
+    {
+      "name": "Pollin, Christopher",
+      "affiliation": "Digital Humanities Craft"
+    },
+    {
+      "name": "Brüning, Gerrit",
+      "affiliation": "Klassik Stiftung Weimar"
+    },
+    {
+      "name": "Oberbichler, Sarah",
+      "affiliation": "Leibniz-Institut für Europäische Geschichte (IEG) Mainz"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "Digital Humanities",
+    "Generative KI",
+    "Large Language Models",
+    "LLM",
+    "DHd",
+    "AGKI-DH",
+    "Prompt Engineering",
+    "Retrieval-Augmented Generation",
+    "RAG",
+    "NLP"
+  ],
+  "language": "deu",
+  "communities": [
+    {
+      "identifier": "dhd"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://agki-dh.github.io",
+      "relation": "isDescribedBy",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://digitalhumanities.de/ag-angewandte-generative-ki-in-den-digitalen-geisteswissenschaften-agki-dh/",
+      "relation": "isDocumentedBy",
+      "resource_type": "other"
+    }
+  ]
+}

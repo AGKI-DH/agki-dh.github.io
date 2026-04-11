@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use or cite the AGKI-DH website or its contents, please cite it as below."
+title: "AGKI-DH — DHd-AG Angewandte Generative KI in den Digitalen Geisteswissenschaften"
+abstract: >-
+  Website der DHd-Arbeitsgruppe "Angewandte Generative KI in den Digitalen
+  Geisteswissenschaften" (AGKI-DH). Sammelt Webinare, Workshops, Ressourcen und
+  Best Practices zur Anwendung generativer KI, insbesondere Large Language
+  Models (LLMs), in den digitalen Geisteswissenschaften.
+type: software
+authors:
+  - family-names: Pollin
+    given-names: Christopher
+    affiliation: "Digital Humanities Craft / Universität Graz"
+  - family-names: Brüning
+    given-names: Gerrit
+    affiliation: "Klassik Stiftung Weimar"
+  - family-names: Oberbichler
+    given-names: Sarah
+    affiliation: "Leibniz-Institut für Europäische Geschichte (IEG) Mainz"
+repository-code: "https://github.com/agki-dh/agki-dh.github.io"
+url: "https://agki-dh.github.io"
+license: CC-BY-4.0
+keywords:
+  - digital humanities
+  - generative AI
+  - large language models
+  - LLM
+  - DHd
+  - AGKI-DH
+  - prompt engineering
+  - retrieval-augmented generation
+date-released: 2026-04-11
