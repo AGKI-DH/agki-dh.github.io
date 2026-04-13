@@ -20,6 +20,20 @@ h3 {
     font-size: 1.3em;
 }
 
+/* Webinar action links (Zoom + Calendar) */
+.webinar-action-link {
+    color: var(--bs-secondary-color);
+    transition: color 0.2s;
+    font-size: 0.95rem;
+}
+.webinar-action-link:hover {
+    color: var(--bs-primary);
+}
+.dropdown-menu-calendar {
+    min-width: 260px;
+    border-radius: 0.5rem;
+}
+
 /* Keep any custom button styles you're using */
 .btn-bd-primary {
     --bd-violet-bg: #712cf9;

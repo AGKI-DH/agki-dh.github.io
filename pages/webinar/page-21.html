@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Zotero / Highwire / Dublin Core metadata -->
     <meta name="citation_title" content="t.b.a.">
     <meta name="citation_author" content="van Strien, Daniel">
@@ -46,6 +47,23 @@
     <div class="row py-lg-5">
       <div class="col-lg-8 col-md-10 mx-auto">
         <h1 class="fw-light">t.b.a.<br/>(Daniel van Strien),<br/>05.05.2026</h1>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-1 text-body-secondary mt-3 mb-0 webinar-actions">
+          <a href="https://uni-graz.zoom.us/j/69588616456?pwd=CnjYI539FaYbpnVC37v9ir8fWA2hvM.1" target="_blank" class="text-decoration-none webinar-action-link">
+            <i class="bi bi-camera-video-fill"></i> Zoom-Meetingraum
+          </a>
+          <span class="mx-1">·</span>
+          <div class="dropdown">
+            <a href="#" class="text-decoration-none webinar-action-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-calendar-plus"></i> Zum Kalender hinzufügen
+            </a>
+            <ul class="dropdown-menu dropdown-menu-calendar shadow-sm">
+              <li><a class="dropdown-item" href="#" onclick="openGoogleCalendar('t.b.a. (Daniel van Strien)', '05.05.2026', '11:30', '12:30'); return false;"><i class="bi bi-google me-2"></i>Google Calendar</a></li>
+              <li><a class="dropdown-item" href="#" onclick="openOutlookCalendar('t.b.a. (Daniel van Strien)', '05.05.2026', '11:30', '12:30'); return false;"><i class="bi bi-microsoft me-2"></i>Outlook</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" onclick="downloadICS('t.b.a. (Daniel van Strien)', '05.05.2026', '11:30', '12:30'); return false;"><i class="bi bi-download me-2"></i>.ics herunterladen</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -72,5 +90,6 @@
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../../assets/script.js"></script>
     </body>
 </html>
