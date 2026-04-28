@@ -27,17 +27,21 @@ function openOutlookCalendar(title, dateStr, startTime, endTime) {
   var params = [
     'path=/calendar/action/compose',
     'rru=addevent',
+    'allday=false',
     'subject='  + encodeURIComponent('AGKI-DH Webinar: ' + title),
-    'startdt='  + encodeURIComponent(isoDate + 'T' + startTime + ':00Z'),
-    'enddt='    + encodeURIComponent(isoDate + 'T' + endTime   + ':00Z'),
+    'startdt='  + encodeURIComponent(isoDate + 'T' + startTime + ':00'),
+    'enddt='    + encodeURIComponent(isoDate + 'T' + endTime   + ':00'),
     'body='     + encodeURIComponent('Webinar der DHd-AG AGKI-DH\n\nZoom: ' + ZOOM_URL),
     'location=' + encodeURIComponent('Zoom (Online)')
   ];
 
-  // No /0/ — but keep path= and rru=addevent
-  window.open('https://outlook.live.com/calendar/deeplink/compose?' + params.join('&'), '_blank');
+  var url = 'https://outlook.live.com/calendar/0/action/compose?' + params.join('&');
+  
+  // ADD THIS — open browser console (F12) and check what prints
+  console.log('Outlook URL:', url);
+  
+  window.open(url, '_blank');
 }
-
 /**
  * Outlook.com — opens in a new tab with pre-filled event.
  */
