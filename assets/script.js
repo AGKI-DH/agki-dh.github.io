@@ -45,22 +45,6 @@ function openOutlookCalendar(title, dateStr, startTime, endTime) {
 /**
  * Outlook.com — opens in a new tab with pre-filled event.
  */
-function openOutlookCalendar(title, dateStr, startTime, endTime) {
-  var d = parseDateParts(dateStr);
-  var isoDate = d.year + '-' + d.month + '-' + d.day;
-
-  var params = [
-    'path=/calendar/action/compose',
-    'rru=addevent',
-    'subject='  + encodeURIComponent('AGKI-DH Webinar: ' + title),
-    'startdt='  + isoDate + 'T' + startTime + ':00',
-    'enddt='    + isoDate + 'T' + endTime   + ':00',
-    'body='     + encodeURIComponent('Webinar der DHd-AG AGKI-DH\n\nZoom: ' + ZOOM_URL),
-    'location=' + encodeURIComponent('Zoom (Online)')
-  ];
-
-  window.open('https://outlook.live.com/calendar/0/action/compose?' + params.join('&'), '_blank');
-}
 
 /**
  * .ics download — works with Apple Calendar, Thunderbird, etc.
