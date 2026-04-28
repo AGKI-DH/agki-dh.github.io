@@ -20,21 +20,21 @@ function parseDateParts(dateStr) {
 /**
  * Google Calendar — opens in a new tab with pre-filled event.
  */
-function openGoogleCalendar(title, dateStr, startTime, endTime) {
+function openOutlookCalendar(title, dateStr, startTime, endTime) {
   var d = parseDateParts(dateStr);
-  var start = d.year + d.month + d.day + 'T' + startTime.replace(':', '') + '00';
-  var end   = d.year + d.month + d.day + 'T' + endTime.replace(':', '')   + '00';
+  var isoDate = d.year + '-' + d.month + '-' + d.day;
 
   var params = [
-    'action=TEMPLATE',
-    'text='     + encodeURIComponent('AGKI-DH Webinar: ' + title),
-    'dates='    + start + '/' + end,
-    'ctz=Europe/Vienna',
-    'details='  + encodeURIComponent('Webinar der DHd-AG AGKI-DH\n\nZoom: ' + ZOOM_URL),
-    'location=' + encodeURIComponent('Zoom (Online)'),
+    'path=/calendar/action/compose',
+    'rru=addevent',
+    'subject='  + encodeURIComponent('AGKI-DH Webinar: ' + title),
+    'startdt='  + encodeURIComponent(isoDate + 'T' + startTime + ':00'),  // ← fix
+    'enddt='    + encodeURIComponent(isoDate + 'T' + endTime   + ':00'),  // ← fix
+    'body='     + encodeURIComponent('Webinar der DHd-AG AGKI-DH\n\nZoom: ' + ZOOM_URL),
+    'location=' + encodeURIComponent('Zoom (Online)')
   ];
 
-  window.open('https://calendar.google.com/calendar/render?' + params.join('&'), '_blank');
+  window.open('https://outlook.live.com/calendar/0/action/compose?' + params.join('&'), '_blank');
 }
 
 /**
