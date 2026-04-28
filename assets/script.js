@@ -24,17 +24,15 @@ function openOutlookCalendar(title, dateStr, startTime, endTime) {
   var d = parseDateParts(dateStr);
   var isoDate = d.year + '-' + d.month + '-' + d.day;
 
-  var params = [
-    'path=/calendar/action/compose',
-    'rru=addevent',
+  var url = 'https://outlook.live.com/calendar/0/deeplink/compose?' + [
     'subject='  + encodeURIComponent('AGKI-DH Webinar: ' + title),
-    'startdt='  + encodeURIComponent(isoDate + 'T' + startTime + ':00'),  // ← fix
-    'enddt='    + encodeURIComponent(isoDate + 'T' + endTime   + ':00'),  // ← fix
+    'startdt='  + encodeURIComponent(isoDate + 'T' + startTime + ':00'),
+    'enddt='    + encodeURIComponent(isoDate + 'T' + endTime   + ':00'),
     'body='     + encodeURIComponent('Webinar der DHd-AG AGKI-DH\n\nZoom: ' + ZOOM_URL),
     'location=' + encodeURIComponent('Zoom (Online)')
-  ];
+  ].join('&');
 
-  window.open('https://outlook.live.com/calendar/0/action/compose?' + params.join('&'), '_blank');
+  window.open(url, '_blank');
 }
 
 /**
