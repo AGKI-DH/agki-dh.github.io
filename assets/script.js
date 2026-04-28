@@ -28,7 +28,7 @@ function openGoogleCalendar(title, dateStr, startTime, endTime) {
 function openOutlookCalendar(title, dateStr, startTime, endTime) {
   var d = parseDateParts(dateStr);
   var isoDate = d.year + '-' + d.month + '-' + d.day;
-  var url = 'https://outlook.live.com/calendar/deeplink/compose'
+  var url = 'https://outlook.office.com/calendar/deeplink/compose'
     + '?path=/calendar/action/compose'
     + '&rru=addevent'
     + '&subject='   + encodeURIComponent('AGKI-DH Webinar: ' + title)
