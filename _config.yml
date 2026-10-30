@@ -1,0 +1,4 @@
+# GitHub Pages builds this repository root with Jekyll. knowledge/ holds internal
+# working documents that stay in the repository but are not part of the site.
+exclude:
+  - knowledge/
